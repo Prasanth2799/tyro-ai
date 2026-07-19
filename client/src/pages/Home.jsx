@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { analyzeMessage } from "../services/ai";
 import Hero from "../components/home/Hero";
 import MessageAnalyzer from "../components/analyzer/MessageAnalyzer";
@@ -9,7 +9,15 @@ const Home = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
-
+const resultRef = useRef(null);
+useEffect(() => {
+  if (result && resultRef.current) {
+    resultRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}, [result]);
 const handleAnalyze = async () => {
   console.log("Clicked Analyze");
   console.log("Message:", message);
@@ -47,7 +55,11 @@ const handleAnalyze = async () => {
   onAnalyze={handleAnalyze}
 />
 
-      {result && <ResultCard result={result} />}
+      {result && (
+  <div ref={resultRef}>
+    <ResultCard result={result} />
+  </div>
+)}
 
       <Features />
     </>
