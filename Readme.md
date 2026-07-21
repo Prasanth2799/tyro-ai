@@ -16,25 +16,25 @@ TyroAI is an AI-powered web application that helps users identify whether a mess
 
 ### 🏠 Home
 
-![Home](./screenshots/home.png)
+![Home](./home.png)
 
 ---
 
 ### 🤖 Message Analyzer
 
-![Message Analyzer](./screenshots/analyzer.png)
+![Message Analyzer](./analyzer.png)
 
 ---
 
 ### 🚨 Scam Detection Result
 
-![Scam Result](./screenshots/scam-result.png)
+![Scam Result](./scam-result.png)
 
 ---
 
 ### 📄 Footer
 
-![Footer](./screenshots/footer.png)
+![Footer](./footer.png)
 
 ## 🛠️ Tech Stack
 
