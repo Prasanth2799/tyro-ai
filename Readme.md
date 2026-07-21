@@ -12,6 +12,30 @@ TyroAI is an AI-powered web application that helps users identify whether a mess
 - 💡 Personalized safety recommendations
 - ⚡ Modern, fast, and responsive user interface
 
+## 📸 Application Screenshots
+
+### 🏠 Home
+
+![Home](./screenshots/home.png)
+
+---
+
+### 🤖 Message Analyzer
+
+![Message Analyzer](./screenshots/analyzer.png)
+
+---
+
+### 🚨 Scam Detection Result
+
+![Scam Result](./screenshots/scam-result.png)
+
+---
+
+### 📄 Footer
+
+![Footer](./screenshots/footer.png)
+
 ## 🛠️ Tech Stack
 
 - React
